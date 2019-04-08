@@ -7,7 +7,8 @@ body {
 	line-height: 1.4em;
 	color: #FFFFFF;
 	background-color: #000000;
-	padding: 0 60px;
+	padding: 0;
+	margin: 0;
 }
 
 /* basic text styles ----------------------------  */
@@ -38,7 +39,7 @@ h3 {
 	border-bottom-color: #8A0441;
 	padding: 8px 0;
 	font-variant: small-caps;
-	font-style: italic;
+
 }
 
 /* link styles ---------------------------- */
@@ -87,7 +88,7 @@ hr {
 }
 
 img {
-	border: solid #FFFFFF 2px;
+	/*border: solid #FFFFFF 2px;*/
 
 }
 
@@ -95,4 +96,49 @@ iframe {
 	border: solid #8A0441 2px;
 	padding: 9px;
 	margin: 9px;
+}
+
+/* DIV STYLES FOR PAGE LAYOUT */
+
+#container { 
+	width: 1100px; 
+	margin: 0 auto; 
+	background-color: #000000; 
+	overflow: hidden; 
+	padding-left: 20px;
+	padding-top: 10px;
+}
+#header { 
+	width: 100%; 
+	background-color: #000000;
+	border-bottom: 1px solid #8A0441;
+}
+#content { 
+	width: 700px;
+	float: left; 
+	padding-bottom: 40px;
+}
+#sidebar { 
+	width: 300px; 
+	float: left;
+	margin-top: 70px;
+	margin-left: 70px;
+	background: #000000;
+	border: 10px solid #8A0441;
+	border-radius: 12px;
+	box-shadow: 4px 4px 2px #F3DF8B;
+}
+#sidebar p{
+	padding: 5px;
+	float: left;
+}
+#footer { 
+	clear: both;
+	width: 100%; 
+	background-color: #000000;
+	border-top: 1px solid #8A0441;
+}
+#footer p {
+	margin: 0;
+	padding: 30px;
 }
