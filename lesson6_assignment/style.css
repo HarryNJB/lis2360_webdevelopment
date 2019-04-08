@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* CSS Document created by Harrison Leitner, March 25th, 2019*/
+
+body {
+	font-family: "Times New Roman", Times, serif;;
+	font-size: 14px;
+	line-height: 1.4em;
+	color: #FFFFFF;
+	background-color: #000000;
+	padding: 0 60px;
+}
+
+/* basic text styles ----------------------------  */
+p, li, td {
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
+}
+h1 {
+	font-size: 32px;
+	padding: 8px 0;
+	font-variant: small-caps;
+	letter-spacing: .1em;
+	line-height: 2em;
+}
+h2 {
+	font-size: 24px;
+	padding: 6px;
+	font-variant: small-caps;
+	letter-spacing: 0.1em;
+	background-color: #8A0441;
+	color: #000000
+}
+h3 {
+	font-size: 18px;
+	letter-spacing: 0.1em;
+	border-bottom-width: 2px;
+	border-bottom-style: inset;
+	border-bottom-color: #8A0441;
+	padding: 8px 0;
+	font-variant: small-caps;
+	font-style: italic;
+}
+
+/* link styles ---------------------------- */
+a:link {
+	font-weight: bold;
+	color: #F3DF8B;
+	text-decoration: underline;
+}
+a:visited {
+	font-weight: bold;
+	color: #F3DF8B;
+	text-decoration:underline;
+}
+a:hover {
+	color: #8A0441;
+}
+
+/* list styles ----------------------------- */
+ul li {
+	list-style-image: url(images/star.png);
+	margin-left: 13px;
+}
+ol {
+	margin-left: 15px;
+}
+
+/* table styles -------------------------------------- */
+table {
+	border: solid #F3DF8B 2px;
+}
+td {
+	padding: 8px;
+	border: solid #F3DF8B 1px;
+}
+th {
+	font-weight: bold;
+	background-color: #F3DF8B;
+	text-align: center;
+	padding: 8px;
+	border: solid #F3DF8B 1px;
+}
+
+/* border styles ------------------------------------ */
+hr {
+	border: solid #8A0441 2px;
+}
+
+img {
+	border: solid #FFFFFF 2px;
+
+}
+
+iframe {
+	border: solid #8A0441 2px;
+	padding: 9px;
+	margin: 9px;
+}
