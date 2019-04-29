@@ -1,0 +1,268 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/carousel/">
+
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <style>
+      .navbar-inverse {
+        background-color: #000000;
+        border-color: #FFFFFF;
+      }
+      .navbar-inverse .navbar-brand {
+        color: #FFFFFF;
+      }
+      .navbar-inverse .navbar-nav>li>a {
+        color: #FFFFFF;
+      }
+      @media (min-width: 768px) {
+        .navbar-wrapper .navbar {
+          border-radius: 30px;
+        }
+        .navbar-wrapper {
+            margin-top: 0px;
+        }
+      }  
+      @media (max-width: 899px) {
+        .carousel {
+          height: 400px;
+        }
+        .carousel {
+           height: 400px;
+        }
+      }
+      .carousel-inner > .item > img {
+        height: auto;
+      }
+      @media (max-width: 719px) {
+        .carousel-inner > .item > img {
+          width: 719px;
+          height: 400px;
+        }
+      }
+      .carousel-inner > .item > img {
+        height: auto;
+      }
+      .carousel .item {
+        background-color: #FFFFFF;
+      }
+    </style>
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">2019 NBA MVP Candidates</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Giannis Antetokounmpo</a></li>
+                <li><a href="#">James Harden</a></li>
+                <li><a href="#">Paul George</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other candidates <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Nikola Jokic</a></li>
+                    <li><a href="#">Stephen Curry</a></li>
+                    <li><a href="#">LeBron James</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Other considerations</li>
+                    <li><a href="#">Joel Embiid</a></li>
+                    <li><a href="#">Damian Lillard</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="images/1.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Is there a new king in town?</h1>
+              <p>This website maps the chances of the leading Most Valuable Player (MVP) candidates.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Share your vote for MVP</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="images/2.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Sleeper Picks.</h1>
+              <p>Will Damian Lillard fly under the radar again this year? The best sleeper picks for MVP.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Underdog candidates</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="images/3.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>THE GREEK FREAK.</h1>
+              <p>Can this physical specimen put the finishing touches on what could be his first MVP season? His dominance this year has sparked debate about who will be the best player alive when LeBron James is gone.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Giannis's Story</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="fourth-slide" src="images/4.jpg" alt="Fourth slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Does 3-point shooting make a player more likely to be MVP?.</h1>
+              <p>Stephen Curry changed the way we play basketball. With players like James Harden following in his footsteps, will the 3-ball take over the MVP race?</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Vote here</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/5.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Giannis Antetokounmpo</h2>
+          <p>Giannis dominated the league this year on both sides of the floor. His length and touch around the basket made him nearly impossible to guard. Pairing that with his developing 3-pt shot should make him a perennial MVP contender for many years to come.</p>
+          <p><a class="btn btn-default" href="#" role="button">Stats &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/6.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>James Harden</h2>
+          <p>James Harden has developed into one of the most dynamic scorers in NBA history. His ability to finish from anywhere on the floor and his great passing out of the pick & roll have made him nearly unguardable without help. Harden led his team for a very poor start to a fantastic finishing record and the 4th seed in the Western Conference. </p>
+          <p><a class="btn btn-default" href="#" role="button">Stats &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/7.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Paul George</h2>
+          <p>Paul George performed at an MVP level in his first year of his new contract with the OKC Thunder. George was a pest on both sides of the floor and shot the 3-ball very well. While the Thunder's season came to a disappointing end in the first round of the playoffs, George carried the team as far as he could. His efficiency did not go unnoticed.</p>
+          <p><a class="btn btn-default" href="#" role="button">Stats &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Giannis Antetokounmpo. <span class="text-muted">Developing Supersstar</span></h2>
+          <p class="lead">If Giannis Antetokounmpo develops a 3-point shot, then the league is doomed. He is already dominating everywhere else on the floor, racking up an impressive 27.7 ppg this season as well as being one of the league's best defenders. He has the best chance of being voted MVP.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="images/8.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">James Harden. <span class="text-muted">Best isolation scorer in NBA history.</span></h2>
+          <p class="lead">James Harden's talent in passing and scoring has made him unguardable. He has the fastest first step in the league and blows by defenders with ease. Harden averaged 36.1 ppg during the regualr season, which is down right ridiculous. Harden is ahving one of the best statistical years in NBA history.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="images/9.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, Paul George. <span class="text-muted">Unlucky.</span></h2>
+          <p class="lead">George is unlucky because his competition for MVP are players having two of the craziest seasons in NBA history. Harden's scoring and Antetokounmpo's all around basketball have been revolutionary for the league. At another time, Paul George's stats would make him a clear cut MVP. But this year is not his year.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="images/10.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2019 Harrison Leitner &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>');</script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    
+    <script src="js/holder.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
